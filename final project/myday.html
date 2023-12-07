@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Author" content="Šimon Tariška">
+        <meta name="Content" content="Calorie_Counter_App">
+        <title>My Day</title>
+        <link rel="stylesheet" href="mydayStyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Calorie Counter</h1>
+            <h2>Count Your Days To Better Health</h2>
+        </header>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="/">Search</a>
+                </li>
+                <li>
+                    <a href="/calculator.html" class="calculator">Calorie Calculator</a>
+                </li>
+                <li>
+                    <a href="/favFoods.html">Favorite Foods</a>
+                </li>
+            </ul>
+        </div>   
+        <main>
+            <div class="reset-day">
+                <button class="reset-btn" onclick="
+                    resetMyDay();
+                    ">Clear My Day</button>
+            </div>
+            <div class="set-up-calories">
+                <input type="number" placeholder="Target Amount Of Calories" class="calories-input">
+                <button type="submit" class="confirm-calories" onclick="changeDailyCalories()">Submit</button>
+                <div class="p-container">
+                    <p class="p-text">If You Are Not Sure How Much Calories You Should Consume <a href="/calculator.html">Click Here</a> And Find Out.</p>
+                </div>
+            </div>
+            <div class="calories-info-container">
+                <h3>Calories Eaten:</h3>
+                <p class="calories-eaten">0</p>
+                <h3>Calories Left: </h3>
+                <p class="calories-left"></p>
+            </div>
+            <div class="logged-food">
+
+            </div>
+        </main>
+        <script src="app.js"></script>     
+    </body>
+</html>

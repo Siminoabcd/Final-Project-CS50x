@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Author" content="Šimon Tariška">
+        <meta name="Content" content="Calorie_Counter_App">
+        <title>Calorie Counter</title>
+        <link rel="stylesheet" href="stylesCalculator.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Calorie Counter</h1>
+            <h2>Count Your Days To Better Health</h2>
+        </header>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="/myday.html">My Day</a>
+                </li>
+                <li>
+                    <a href="/">Search</a>
+                </li>
+                <li>
+                    <a href="/favFoods.html">Favorite Foods</a>
+                </li>
+            </ul>
+        </div>  
+        <div class="inputs-container">
+            <h2>Calorie Calculator</h2>
+            <p>Calculate your daily calorie budget to achieve your target weight !</p>
+            <div class="p-container-calculator">
+                <p class="p-text-calculator">Set Up Your Daily Calories Goal <a href="/myday.html">Here</a>.</p>
+            </div>
+            <form id="calorieForm">
+                <div class="age-div">    
+                    <label for="age" style="font-weight: bold;">Age:</label>
+                    <input type="number" id="age" min="18" max="80" required>
+                </div>
+                <div class="gender-div">
+                    <p style="font-weight: bold;">Gender:</p>
+                    <div class="man-gender">   
+                        <input type="radio" id="man" name="gender" required>
+                        <label for="man" name="gender">Man</label>
+                    </div>
+                    <div class="woman-gender">
+                        <input type="radio" id="woman" name="gender" required>
+                        <label for="woman" name="gender">Woman</label>
+                    </div>
+                </div>
+                <div class="height-div">
+                    <label for="height" style="font-weight: bold;">Height (in cm)</label>
+                    <input type="number" id="height" required>
+                </div>
+                <div class="weight-div">
+                    <label for="weight" style="font-weight: bold;">Weight (in kg)</label>
+                    <input type="number" id="weight" required>
+                </div>
+                <div class="activity-div">
+                    <p style="font-weight: bold;">Choose your weekly exercise regime:</p>
+                    <div>
+                        <input type="radio" id="1" name="activity" required>
+                        <label for="1" name="activity">Base Metabolic Rate</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="1.25" name="activity" required>
+                        <label for="1.25" name="activity">Little to no exercise</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="1.35" name="activity" required>
+                        <label for="1.35" name="activity">Exercise 1-3 times/week</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="1.45" name="activity" required>
+                        <label for="1.45" name="activity">Exercise 4-5 times/week</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="1.60" name="activity" required>
+                        <label for="1.60" name="activity">Daily exercise or Intense exercise 4-5 times/week</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="1.80" name="activity" required>
+                        <label for="1.80" name="activity">Intense exercise 6-7 times/week</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="1.95" name="activity" required>
+                        <label for="1.95" name="activity">Very intense exercise daily, or physical job</label>
+                    </div>
+                    <div class="submit-div">
+                        <input type="button" value="Submit" class="submitBtn" id="submitBtn" onclick="
+                            console.log('button was clicked');
+                            saveFormData();
+                            calculatePersonalData();
+                            ">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="output-container" id="outputContainer">
+            <div class="output"></div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

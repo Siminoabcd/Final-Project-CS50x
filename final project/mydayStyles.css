@@ -1,0 +1,136 @@
+body {
+    font-family: 'Oswald';
+    margin: 0;
+    padding: 0;
+    background-color: #FFEED6; 
+    color: #005A54; 
+}
+
+header {
+    background-color: #EF6869; 
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+.navbar {
+    background-color: #005A54; 
+    padding: 10px;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    display: inline;
+}
+
+li > a > .stats {
+    margin-right: 12px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.4s;
+    width: 100%;
+    height: 100%;
+}
+
+.reset-day {
+    text-align: center;
+    padding: 20px;
+}
+
+.reset-btn {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #EF6869; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    transition: 0.4s;
+}
+
+.reset-btn:hover {
+    background-color: #b93939;
+}
+
+.calories-info-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.calories-info-container h3 {
+    margin-bottom: 10px;
+    color: #EF6869; 
+}
+
+.calories-eaten,
+.calories-left {
+    font-size: 24px;
+    font-weight: bold;
+    color: #EF6869; 
+}
+
+.logged-food {
+    padding: 20px;
+}
+
+.food-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+
+
+
+.set-up-calories {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.calories-input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: solid #005A54 2px;
+    margin-bottom: 10px;
+    width: 230px; 
+}
+
+.confirm-calories {
+    border: none;
+    border-radius: 8px;
+    padding: 13px;
+    transition: 0.4s;
+    background-color: #EF6869; 
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.confirm-calories:hover {
+    background-color: #b93939;
+}
+
+a {
+    text-decoration: underline;
+    color: #EF6869;
+}

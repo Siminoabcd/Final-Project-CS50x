@@ -1,0 +1,165 @@
+/* stylesCalculator.css */
+
+body {
+    font-family: 'Oswald';
+    margin: 0;
+    padding: 0;
+    background-color: #FFEED6; /* Primary Color */
+    color: #005A54; /* Secondary Color */
+}
+
+header {
+    background-color: #EF6869; /* Third Color */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+.navbar {
+    background-color: #005A54; /* Secondary Color */
+    padding: 10px;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.4s;
+    width: 100%;
+    height: 100%;
+}
+
+.inputs-container {
+    padding: 20px;
+}
+
+.inputs-container h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.inputs-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form {
+    position: absolute;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: solid #005A54 2px;
+    margin-bottom: 10px;
+}
+
+.age-div,
+.height-div,
+.weight-div,
+.activity-div {
+    margin-bottom: 20px;
+}
+
+.gender-div div,
+.activity-div div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.gender-div label,
+.activity-div div label {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.activity-div p,
+.gender-div p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.submitBtn {
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.4s;
+    background-color: #EF6869;
+    color:#fff;
+}
+
+.submitBtn:hover {
+    background-color: #b93939;
+}
+
+.output-container {
+    padding-left: 600px;
+    text-align: center; /* Align the text to the right side */
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-start; /* Align items to the right */
+}
+
+.output-maintain,
+.output-mild-loss,
+.output-extreme-loss {
+    border: 2px solid #005A54;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    width: 300px;
+    margin-left: 50px; /* Auto margin on the left to push it to the right */
+    
+}
+
+.output-maintain h3,
+.output-mild-loss h3,
+.output-extreme-loss h3 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.output-maintain p,
+.output-mild-loss p,
+.output-extreme-loss p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: underline;
+    color: #EF6869;
+}
+
+.p-conatiner-calculator {
+    display: block;
+}

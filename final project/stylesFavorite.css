@@ -1,0 +1,105 @@
+body {
+    font-family: 'Oswald';
+    margin: 0;
+    padding: 0;
+    background-color: #FFEED6; 
+    color: #005A54; 
+}
+
+header {
+    background-color: #EF6869; 
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+.navbar {
+    background-color: #005A54; 
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    display: inline;
+}
+
+li > a > .stats {
+    margin-right: 12px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.4s;
+    width: 100%;
+    height: 100%;
+}
+
+.section-heading {
+    text-align: center;
+    padding: 20px;
+}
+
+.main {
+    text-align: center;
+}
+
+.favFoods-container {
+    padding: 20px;
+}
+
+.food-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: underline;
+    color: #EF6869;
+}
+
+.rmv-BTN {
+    border: none;
+    border-radius: 8px;
+    background-color: #EF6869;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    transition: 0.4s;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.rmv-BTN:hover {
+    background-color: #b93939;
+}
+
+.log-food {
+    border: none;
+    border-radius: 8px;
+    background-color: #EF6869;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.log-food:hover{
+    background-color: #b93939;
+}
